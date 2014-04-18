@@ -796,4 +796,5 @@ function people_add_taxonomy_filters() {
 }
 
 add_action( 'restrict_manage_posts', 'people_add_taxonomy_filters' );
+
 ?>
