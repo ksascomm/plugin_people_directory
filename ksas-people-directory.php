@@ -308,7 +308,17 @@ $personaldetails_3_metabox = array(
 					'rich_editor' 	=> 0,			
 					'max' 			=> 0,
 					'std'			=> ''													
-				),																
+				),
+				array(
+					'name' 			=> 'ORCID ID',
+					'desc' 			=> 'Enter only your ID number.  For example if your url is http://orcid.org/0000-0001-5079-840X you will enter only 0000-0001-5079-840X',
+					'id' 			=> 'ecpt_orcid_id',
+					'class' 		=> 'ecpt_orcid_id',
+					'type' 			=> 'text',
+					'rich_editor' 	=> 0,			
+					'max' 			=> 0,
+					'std'			=> ''													
+				),																	
 				)
 );			
 			
@@ -936,5 +946,4 @@ function people_add_taxonomy_filters() {
 }
 
 add_action( 'restrict_manage_posts', 'people_add_taxonomy_filters' );
-
 ?>
