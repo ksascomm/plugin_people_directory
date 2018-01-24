@@ -318,7 +318,17 @@ $personaldetails_3_metabox = array(
 					'rich_editor' 	=> 0,			
 					'max' 			=> 0,
 					'std'			=> ''													
-				),																	
+				),
+				array(
+					'name' 			=> 'Twitter',
+					'desc' 			=> 'Please remove the @. For example if your handle is @JHUArtsSciences you will enter only JHUArtsSciences',
+					'id' 			=> 'ecpt_twitter',
+					'class' 		=> 'ecpt_twitter',
+					'type' 			=> 'text',
+					'rich_editor' 	=> 0,			
+					'max' 			=> 0,
+					'std'			=> ''													
+				),																			
 				)
 );			
 			
@@ -946,4 +956,5 @@ function people_add_taxonomy_filters() {
 }
 
 add_action( 'restrict_manage_posts', 'people_add_taxonomy_filters' );
+
 ?>
